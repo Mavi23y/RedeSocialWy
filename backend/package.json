@@ -1,0 +1,24 @@
+{
+  "name": "redesocialwy",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Mavi23y/RedeSocialWy#readme",
+  "bugs": {
+    "url": "https://github.com/Mavi23y/RedeSocialWy/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mavi23y/RedeSocialWy.git"
+  },
+  "license": "ISC",
+  "author": "Maria Vitória",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon backend/src/server.js"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
