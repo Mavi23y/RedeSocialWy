@@ -13,12 +13,14 @@
   "license": "ISC",
   "author": "Maria Vitória",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon backend/src/server.js"
+    "dev": "nodemon src/server.js"
   },
   "dependencies": {
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
     "nodemon": "^3.1.14"
   }
 }
