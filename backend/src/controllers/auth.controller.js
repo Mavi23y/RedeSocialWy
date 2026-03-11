@@ -4,13 +4,13 @@ const repo = require("../repositories/user.repo");
 
 async function register(req, res, next) {
   try {
-    const { name, email, password } = req.body;
+    const { name, email, password, bio } = req.body;
     const exists = await repo.findByEmail(email);
     if (exists) return res.status(409).json({ message: "E-mail já cadastrado" });
 
     const hash = await hashPassword(password);
     
-    await repo.createUser(name, email, hash);
+    await repo.createUser(name, email, bio, hash);
     res.status(201).json({ message: "Usuário criado" });
   } catch (e) { next(e); }
 }
